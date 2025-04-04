@@ -58,3 +58,28 @@ mode = "comment"
 [[source]]
 name = "default"
 default = true
+
+[[plugin]]
+name = "checkov"
+
+[[plugin]]
+name = "golangci-lint"
+
+[[plugin]]
+name = "prettier"
+
+[[plugin]]
+name = "radarlint-js"
+
+[[plugin]]
+name = "ripgrep"
+
+[[plugin]]
+name = "trivy"
+drivers = [
+  "config",
+  "fs-vuln",
+]
+
+[[plugin]]
+name = "trufflehog"
